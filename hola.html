@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón Tota</title>
+    <style>
+        #mensaje {
+            display: none; /* Inicialmente oculto */
+            margin-top: 10px;
+            font-size: 20px;
+            color: blue; /* Color del texto */
+        }
+    </style>
+</head>
+<body>
+
+    <button id="botonTota">Tota</button>
+    <div id="mensaje">Hola tota</div>
+
+    <script>
+        document.getElementById('botonTota').addEventListener('click', function() {
+            document.getElementById('mensaje').style.display = 'block'; // Muestra el mensaje
+        });
+    </script>
+
+</body>
+</html>
