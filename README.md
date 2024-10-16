@@ -1,5 +1,4 @@
 # expo-tecnica-2024-lri
 Proyecto LRI Expo Técnica 2024
 
-# otro titulo
-- item 1
+# EL GRUPO TOTA SE REPORTA EN EL REPOSITORIO ESCOLAR
