@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
     <title>Documentacion LRI</title>
 </head>
 <body>
@@ -24,8 +25,23 @@
 
     <h1>La Metodología Kanban</h1>
     <p>En nuestro proyecto, implementamos la metodología Kanban para gestionar tareas de manera eficiente. <br> Creamos un tablero dividido en columnas: "Por Hacer", "En Progreso" y "Completado". Cada tarea se representó con una tarjeta, lo que nos permitió visualizar el estado del trabajo. <br> Establecimos límites en el trabajo en progreso, restringiendo el número de tareas en "En Progreso". Esto mejoró nuestra concentración y redujo los tiempos de entrega.</p>
+  
+    <h1>PROYECTO RASPBERRY PI</h1>
+    
+    <h1 style="color: blue" >Conexión y acceso al router</h1>
+    <p>Lo primero que hay que hacer es conectar el router a la corriente y luego entrar a su configuración, para esto hay que presionar la tecla WINDOWS + R y en el recuadro escribir “cmd”, una vez aquí, escribir “ipconfig” y buscar la puerta de enlace predeterminada (dirección del router). La dirección que salga aquí debemos escribirla en el navegador, saldrán campos para ingresar una contraseña y usuario, esto depende del router pero normalmente ambos son “admin”.</p>
+
+    <h1 style="color: blue" >Verificación de dispositivos conectados.</h1>
+    <p>Una vez aquí, nos vamos al apartado de DHCP y luego Clientes de DHCP, en esta sección aparecerán los dispositivos conectados a la red. Comprobaremos que esté nuestro dispositivo y veremos la  dirección IP que se nos ha asignado.</p>
+
+    <h1 style="color: blue">Conexión de la Raspberry Pi al router.</h1>
+    <p>Ahora deberemos conectar la Raspberry Pi a la corriente y luego a alguno de los puertos LAN del router mediante un cable UTP. Después de hacer la conexión comprobaremos si en el apartado de Clientes de DHCP aparece nuestro Raspberry Pi.</p>
+
+    <h1 style="color: blue; font: bold;">Acceso remoto y prueba de conectividad.</h1>
+    <p>Usando acceso remoto a través del protocolo de SSH, entramos a la consola del Raspberry Pi,  después de obtener la dirección IP podemos realizar una prueba, enviando un comando "ping" desde la Raspberry Pi hacia el router. Esto se realiza desde la consola escribiendo “ping” seguido de la dirección IP del router.</p>
 
 
 
+    
 </body>
 </html>
