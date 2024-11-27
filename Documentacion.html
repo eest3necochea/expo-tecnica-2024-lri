@@ -41,7 +41,7 @@
             Entrar a la rama grupo2: git checkout grupo2.
         </li>
         <li>
-            Editar el archivo: Code . 
+            Editar el archivo: code . 
         </li>
         <li>
             Ver el estado del archivo: git status.
@@ -62,7 +62,33 @@
             Subir cambios al repositorio: git push origin grupo2 (nombre de la rama).
         </li>
     </ul>
-
+    <h1>Luego de aprender correctamente el funcionamiento del GIT, trabajamos con una Raspberry Pi y un router.
+        A continuacion, adjuntamos la documentacion del proyecto.
+    </h1>
+    <p>
+            Dicho proyecto consiste en crear una Red a la cual se conecten una raspberrypi y una computadora 
+        (ambos serían los hosts) a un router mediante wi-fi. Para alcanzar esto, debemos asignarles una IP 
+        a los hosts y configurar el router.
+            Primero, debemos resetear el router para que su nombre y contraseña se reestablezcan al 
+        estado de fábrica.
+            Seguiremos conectándonos, desde la PC a la red del router, aunque no disponga de acceso 
+        a internet. Para esto, entraremos a la página del router:
+                •	Ingresar en el navegador la dirección Ip de este (192.168.0.1/24), 
+                •	Ingresar el usuario “admin” y la contraseña “admin”.
+            Así, podremos verificar el estado de la red, el modo de operación (para controlar si la IP es 
+        dinámica o estática) y la lista de clientes DHCP.  En esta última, veremos que dispositivos están 
+        conectados a la red, a la cual se les asignaran las Ip entre 100 y 199 debido a que este es el rango 
+        de asignaciones de Ip del router.
+            Desde la Pc, abriremos la consola y ejecutaremos el comando ping (ingresando la ip del router) 
+        para testear la conexión de estos.
+	        Para realizar la conexión de la raspberrypi, primero debemos armarla. Conectaremos los 
+        cables del del ventilador con los pines, el cable positivo al pin de 5V (5 voltios) y el cable negativo 
+        al GND (ground/tierra). Enchufamos la raspberrypi a la corriente y conectamos el cable UTP en la 
+        raspberrypi y en el router. Así, la raspberry, aparecerá en la lista de clientes DHCP de la página del 
+        router, afirmando su conexión a la red. 
+            Finalmente, ejecutaremos el comando ping desde la Pc ya conectada para verificar la conexión de 
+        la raspberry al router.
+    </p>
     <h1>La Metodología Kanban</h1>
     <p>En nuestro proyecto, implementamos la metodología Kanban para gestionar tareas de manera eficiente. <br> Creamos un tablero dividido en columnas: "Por Hacer", "En Progreso" y "Completado". Cada tarea se representó con una tarjeta, lo que nos permitió visualizar el estado del trabajo. <br> Establecimos límites en el trabajo en progreso, restringiendo el número de tareas en "En Progreso". Esto mejoró nuestra concentración y redujo los tiempos de entrega.</p>
   
