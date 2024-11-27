@@ -68,17 +68,37 @@
   
     <h1>PROYECTO RASPBERRY PI</h1>
     
-    <h1 style="color: blue" >Conexión y acceso al router</h1>
-    <p>Lo primero que hay que hacer es conectar el router a la corriente y luego entrar a su configuración, para esto hay que presionar la tecla WINDOWS + R y en el recuadro escribir “cmd”, una vez aquí, escribir “ipconfig” y buscar la puerta de enlace predeterminada (dirección del router). La dirección que salga aquí debemos escribirla en el navegador, saldrán campos para ingresar una contraseña y usuario, esto depende del router pero normalmente ambos son “admin”.</p>
+    <h1>
+        - Comenzamos reformateando el router para dejarlo con su ip y contraseña de fábrica.
+    </h1>
 
-    <h1 style="color: blue" >Verificación de dispositivos conectados.</h1>
-    <p>Una vez aquí, nos vamos al apartado de DHCP y luego Clientes de DHCP, en esta sección aparecerán los dispositivos conectados a la red. Comprobaremos que esté nuestro dispositivo y veremos la  dirección IP que se nos ha asignado.</p>
+    <h1>
+        - Entramos a la red del router con un teléfono, empleando la contraseña escrita en la etiqueta.
+    </h1>
 
-    <h1 style="color: blue">Conexión de la Raspberry Pi al router.</h1>
-    <p>Ahora deberemos conectar la Raspberry Pi a la corriente y luego a alguno de los puertos LAN del router mediante un cable UTP. Después de hacer la conexión comprobaremos si en el apartado de Clientes de DHCP aparece nuestro Raspberry Pi.</p>
+    <h1>
+        - A través del link que está escrito detrás del router  entramos a su web, utilizando la contraseña admin.
+    </h1>
 
-    <h1 style="color: blue; font: bold;">Acceso remoto y prueba de conectividad.</h1>
-    <p>Usando acceso remoto a través del protocolo de SSH, entramos a la consola del Raspberry Pi,  después de obtener la dirección IP podemos realizar una prueba, enviando un comando "ping" desde la Raspberry Pi hacia el router. Esto se realiza desde la consola escribiendo “ping” seguido de la dirección IP del router.</p>
+    <h1>
+        - Ya en la web,  comprobamos si el modo de operación del router era dinámico o estático.
+    </h1>
+
+    <h1>
+        - También conectamos una computadora a la red y enviamos un ping al router para comprobar si se había conectado correctamente.
+    </h1>
+
+    <h1>
+        - Conectamos el ventilador de una raspberry pi al pin de 5V y al pin de tierra para poder iniciarla.
+    </h1>
+
+    <h1>
+        - Conectamos la raspberry pi al router mediante un cable UTP y nos fijamos su ip en la web.
+    </h1>
+
+    <h1>
+        - Teniendo su ip enviamos un ping desde la computadora.
+    </h1>
 
 </body>
 </html>
